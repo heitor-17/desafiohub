@@ -1,0 +1,57 @@
+<div class="form-container">
+    <div class="tabs">
+      <button class="tab active">Element</button>
+      <button class="tab">Content</button>
+    </div>
+    <div class="form-header">
+      <h3>Submodel Element (Property)</h3>
+    </div>
+    <form >
+      <div class="form-group">
+        <label for="idShort">Referable:</label>
+        <input type="text" id="idShort" required placeholder="*idShort" />
+      </div>
+      <div class="form-group">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">Select category</option>
+          <!-- Adicione opções conforme necessário -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="description">Description:</label>
+        <button type="button">Create data element!</button>
+      </div>
+      <div class="form-group">
+        <label for="kind">Kind:</label>
+        <select id="kind">
+          <option value="template">Template</option>
+          <!-- Adicione opções conforme necessário -->
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="semanticId">Semantic ID:</label>
+        <button type="button">Add existing</button>
+        <button type="button">Add blank</button>
+      </div>
+      <div class="form-group">
+        <label for="qualifiers">Qualifiable:</label>
+        <button type="button">Create empty list of Qualifiers!</button>
+      </div>
+      <div class="form-group">
+        <label for="dataSpecification">HasDataSpecification (Reference):</label>
+        <button type="button">Add reference</button>
+      </div>
+      <div class="form-group">
+        <label for="value">Property:</label>
+        <input type="text" id="value" placeholder="value" />
+        <input type="text" id="valueType" placeholder="valueType" />
+        <button type="button">Create data element!</button>
+      </div>
+      <div class="form-actions">
+        <button type="button">Cancel</button>
+        <button type="submit">Add</button>
+      </div>
+    </form>
+  </div>
+  

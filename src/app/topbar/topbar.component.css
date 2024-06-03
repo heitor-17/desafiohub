@@ -1,0 +1,20 @@
+.topbar {
+    display: flex;
+    align-items: center;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
