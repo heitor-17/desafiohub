@@ -1,6 +1,11 @@
+
+.container {
+  display: flex-start;
+}
+
 .topbar {
-    display: flex;
-    align-items: center;
+    display: flex 2;
+    
     background-color: #e0f7fa;
     padding: 10px;
     border-bottom: 1px solid #ccc;
@@ -16,5 +21,9 @@
     font-size: 18px;
     font-weight: bold;
     color: #333;
+  }
+
+  .form{
+    display: flex 1;
   }
   

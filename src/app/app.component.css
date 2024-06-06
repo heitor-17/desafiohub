@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+.tela{
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+}
+
+.boxp1 {
+width: 48%;
+display: flex 2;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+padding: 10px;
+border-bottom: 1px solid #ffffff;
+justify-content: end;
+
+  
+}
+  
+
+
+.boxp2 {
+  display: flex;
+  width: 48%
+  
+  }
+
+  .part1{
+    display: flex 2;
+    
+    padding: 10px;
+   justify-content: end;
+
+  }
+  
+   
+
+  .part2{
+    display: flex 1;
+    
+   
+    
+    
+
+
+  }
