@@ -15,22 +15,15 @@ interface FoodNode {
 
 const TREE_DATA: FoodNode[] = [
   {
-    name: 'Fruit',
-    children: [{name: 'Apple'}, {name: 'Banana'}, {name: 'Fruit loops'}],
+    name: '"package"',
+    children: [{name: '< T> "Document"[,]',
+                children:[{name:'prop'}]
+  
   },
-  {
-    name: 'Vegetables',
-    children: [
-      {
-        name: 'Green',
-        children: [{name: 'Broccoli'}, {name: 'Brussels sprouts'}],
-      },
-      {
-        name: 'Orange',
-        children: [{name: 'Pumpkins'}, {name: 'Carrots'}],
-      },
-    ],
+ ],
+    
   },
+  
 ];
 
 /** Flat node with expandable and level information */
@@ -40,14 +33,16 @@ interface ExampleFlatNode {
   level: number;
 }
 
-/**
+/**  
+
  * @title Tree with flat nodes
  */
 @Component({
   selector: 'tree',
-  templateUrl: 'tree.component.html',
   standalone: true,
   imports: [MatTreeModule, MatButtonModule, MatIconModule],
+  templateUrl: 'tree.component.html',
+  styleUrl: 'tree.component.css',
 })
 
 export class TreeComponent{

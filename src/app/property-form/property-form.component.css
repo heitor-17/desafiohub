@@ -1,3 +1,12 @@
+
+
+.linha{
+  background: solid;
+  background-color:  #e1d8d8;
+}
+
+
+
 .form-container {
     background-color: #fff;
     border-radius: 5px;
@@ -20,26 +29,37 @@
     text-align: center;
     cursor: pointer;
     font-weight: bold;
+    border-color:transparent;
+    background-color: transparent;
+    box-shadow: 2 2px 2px #007bff;
   }
   
   .tab.active {
     border-bottom: 3px solid #007bff;
-    color: #007bff;
+    color:#07478a;
   }
   
   .form-header h3 {
     margin: 0;
     margin-bottom: 20px;
     font-size: 18px;
-    color: #007bff;
+    color: white;
+    background-color: #07478a;
+    text-align: center;
+
+    
   }
   
   .form-group {
     margin-bottom: 15px;
+    border: 15px;
+    border-color: #823838;
+    
+    
   }
   
   .form-group label {
-    display: block;
+    
     margin-bottom: 5px;
     font-weight: bold;
   }
@@ -57,37 +77,38 @@
     padding: 8px;
     margin-top: 5px;
     border: 1px solid #007bff;
-    background-color: #007bff;
+    background-color: #0359b574;
     color: white;
     border-radius: 4px;
     cursor: pointer;
   }
   
   .form-group button[type="button"] {
-    background-color: transparent;
-    color: #007bff;
-    border: 1px solid #007bff;
+    background-color: rgb(212, 212, 212);
+    color: #000;
+    border-color: rgb(229, 229, 231);
+    
   }
   
   .form-actions {
     display: flex;
-    justify-content: space-between;
+    justify-content: end;
   }
   
   .form-actions button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
+    padding: 10px 50px;
+    border: black;
     cursor: pointer;
   }
   
   .form-actions button[type="button"] {
     background-color: #ccc;
     color: #333;
+    margin-right: 30px;
   }
   
   .form-actions button[type="submit"] {
-    background-color: #007bff;
+    background-color: #07478a;
     color: white;
   }
   
