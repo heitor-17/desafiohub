@@ -24,7 +24,31 @@
       </div>
       <div class="form-group">
         <label for="description">Description:</label>
-        <button type="button">Create data element!</button>
+        <div>
+          <button  type="button" (click)="toggleDiv()">Create data element</button>
+          <div *ngIf="isDivVisible" >
+            <button  type="button" (click)="toggleDiv()">add blank</button>
+            
+            <img src="" alt="">
+
+            <select id="en">
+              <option value="EN"></option>
+              <option value="DE"></option>
+              <option value="FR"></option>
+              <option value="ES"></option>
+              <option value="IT"></option>
+              <option value="CN"></option>
+              <option value="KR"></option>
+              <option value="JP"></option>
+            </select>
+            
+            <input type="text" id="value" placeholder="value" />
+
+
+
+          </div>
+        </div>
+        
       </div>
       <hr class="linha">
 

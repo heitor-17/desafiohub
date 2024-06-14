@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 import {MatTreeFlatDataSource, MatTreeFlattener, MatTreeModule} from '@angular/material/tree';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
-
+import {MatMenuModule} from '@angular/material/menu';
 /**
  * Food data with nested structure.
  * Each node has a name and an optional list of children.
@@ -40,7 +40,7 @@ interface ExampleFlatNode {
 @Component({
   selector: 'tree',
   standalone: true,
-  imports: [MatTreeModule, MatButtonModule, MatIconModule],
+  imports: [MatTreeModule, MatButtonModule, MatIconModule,MatMenuModule],
   templateUrl: 'tree.component.html',
   styleUrl: 'tree.component.css',
 })
@@ -74,5 +74,17 @@ export class TreeComponent{
 
   hasChild = (_: number, node: ExampleFlatNode) => node.expandable;
 
+  // create(node: ExampleFlatNode) {
+  //   const newNode = {
+  //     name: "novo",
+  //     children: [],
+  //   };
    
+  // }
+  addChildren(node: FoodNode, name: string) {
+    node.children = node.children ?? [];
+    node.children.push({ name });
+  }
+
+ 
 }
