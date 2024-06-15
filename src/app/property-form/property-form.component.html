@@ -27,19 +27,18 @@
         <div>
           <button  type="button" (click)="toggleDiv()">Create data element</button>
           <div *ngIf="isDivVisible" >
-            <button  type="button" (click)="toggleDiv()">add blank</button>
             
             <img src="" alt="">
 
-            <select id="en">
-              <option value="EN"></option>
-              <option value="DE"></option>
-              <option value="FR"></option>
-              <option value="ES"></option>
-              <option value="IT"></option>
-              <option value="CN"></option>
-              <option value="KR"></option>
-              <option value="JP"></option>
+            <select aria-placeholder="" id="en" style="width: 90px;">
+              <option value="EN">EM</option>
+              <option value="DE">DE</option>
+              <option value="FR">FR</option>
+              <option value="ES">ES</option>
+              <option value="IT">IT</option>
+              <option value="CN">CN</option>
+              <option value="KR">KR</option>
+              <option value="JP">JP</option>
             </select>
             
             <input type="text" id="value" placeholder="value" />
